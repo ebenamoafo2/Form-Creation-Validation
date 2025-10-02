@@ -18,7 +18,7 @@ let isValid = true;
 const messages = [];
 
 //Username Validation
-if(username.value.length < 3) {
+if(username.length < 3) {
     isValid = false;
     messages.push('Username is required');
 }
@@ -30,7 +30,7 @@ if(!email.includes('@') || !email.includes('.')) {
 }
 
 //Password Validation
-if(password.value.length < 8 ) {
+if(password.length < 8 ) {
     isValid = false;
     messages.push("Password must be at least 8 characters long.");
 }
